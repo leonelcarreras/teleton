@@ -1,0 +1,35 @@
+#timer div {
+    margin-top: 140px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    background-color: white;
+    color: #e63742;
+    width: 80px;
+    height: 85px;
+    border-radius: 5px;
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+ #timer div span {
+    color:black;
+    font-weight: bold;
+    display: block;
+    margin-top: -2px;
+    font-size: 15px; 
+ }
+ @media only screen and (max-width: 767px) {
+    #timer {
+      margin-top: -20px;
+    }
+    #timer div {
+      width: 100px;
+      height: 80px;
+      font-size: 32px;
+      margin-top: 20px;
+   }
+   #timer div span {
+     font-size: 14px;
+   }
+ }
