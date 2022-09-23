@@ -687,38 +687,7 @@
 
 
     
-    <section id="clients" class="clients" style="background-color: #F8F8F8;">
-        <center>
-          <header class="section-header">
-            <p style="font-size: 20px;">ESTE PROYECTO SE LLEVA A CABO GRACIAS A</p>
-          </header>
-        <div class="container aos-init aos-animate" style="display: flex;justify-content:center;background-color: transparent;border: none !important;box-shadow:none;" >
-          
-          
-          
-            
-              <div class="col-lg-2 col-md-4 col-6"> 
-                <a href="https://www.teleton.cl/" target="_blank" style="display: flex;justify-content: end;">
-                  <img src="assets/img/teleton/agradecimientos/Teleton.png" class="img-fluid" alt="">
-                </a>
-              </div>
-            
-              <div class="col-lg-2 col-md-4 col-6"> 
-                <a href="https://www.instagram.com/anfv_chile/" target="_blank">
-                  <img src="assets/img/teleton/agradecimientos/ANFV.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="col-lg-2 col-md-4 col-6"> 
-                <a href="https://www.instagram.com/gamingarenacl/" target="_blank" style="display: flex;justify-content:start">
-                  <img src="assets/img/teleton/agradecimientos/Gaming Arena.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              
-  
-            </div>
-          </div>
-    </center>
-        </section>
+    
       
       
       <!-- End Clients Section -->

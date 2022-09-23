@@ -32,9 +32,7 @@ if (isset($_POST['register'])){
         $consulta = "INSERT INTO granturismo7(nombre,rut,genero,nacimiento,comuna,email,telefono,discord,plataforma,psnid)  VALUES ('$nombre','$rut','$genero','$nacimiento','$comuna','$email','$telefono','$discord','$plataforma','$psnid')";
         $resultado = mysqli_query($db,$consulta);
         if($resultado) {
-            ?> 
-            ¡Se inscribió exitosamente!
-            <?php
+            header("Location: /felicidades");
         } else {
             ?>            
             ¡Ups ha ocurrido un error!

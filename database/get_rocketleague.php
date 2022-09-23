@@ -32,9 +32,7 @@ if (isset($_POST['register'])){
         $consulta = "INSERT INTO rocketleague(nombre,rut,genero,nacimiento,comuna,email,telefono,discord,plataforma,equipo)  VALUES ('$nombre','$rut','$genero','$nacimiento','$comuna','$email','$telefono','$discord','$plataforma','$equipo')";
         $resultado = mysqli_query($db,$consulta);
         if($resultado) {
-            ?> 
-            ¡Se inscribió exitosamente!
-            <?php
+            header("Location: /felicidades");
         } else {
             ?>            
             ¡Ups ha ocurrido un error!

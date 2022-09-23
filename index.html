@@ -11,7 +11,9 @@
   <link href="assets/img/teleton/favicon/favicon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +30,7 @@
   <script src="js/flipdown.js"></script>
   <link rel="stylesheet" href="assets/css/contador.css">
 
-  
+
 </head>
 
 <body>
@@ -37,8 +39,8 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center" >
-        <img src="assets/img/teleton/header/Logos-RGB-Campana-Teleton-2021-4.png" alt="" >
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/teleton/header/Logos-RGB-Campana-Teleton-2021-4.png" alt="">
       </a>
 
       <nav id="navbar" class="navbar">
@@ -47,6 +49,8 @@
           <li><a class="nav-link scrollto" href="#comoparticipar">Cómo participar</a></li>
           <li><a class="nav-link scrollto" href="#torneos">Torneos</a></li>
           <li><a class="nav-link scrollto" href="#discord">Discord</a></li>
+          <li><a class="nav-link scrollto" href="#canales">Streaming</a></li>
+          <li><a class="nav-link scrollto" href="#noticias">Noticias</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -63,94 +67,101 @@
           <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <img src="assets/img/teleton/inicio/Logo-eSports-Teleton-RGB-2.png" class="img-fluid" alt="">
           </div>
-          
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
 
-          <!--Cuenta regresiva-->
-          <center>
-          <div data-aos="zoom-out" data-aos-delay="600" id="timer" style="display:flex;justify-content: center;"></div>
-          </center>
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
 
-          <script>
-            function updateTimer() {
+            <!--Cuenta regresiva-->
+            <center>
+              <div data-aos="zoom-out" data-aos-delay="600" id="timer" style="display:flex;justify-content: center;">
+              </div>
+            </center>
+
+            <script>
+              function updateTimer() {
                 future = Date.parse("oct 1, 2022 00:0:00");
-            now = new Date();
-            diff = future - now;
+                now = new Date();
+                diff = future - now;
 
-            days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            hours = Math.floor(diff / (1000 * 60 * 60));
-            mins = Math.floor(diff / (1000 * 60));
-            secs = Math.floor(diff / 1000);
+                days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                hours = Math.floor(diff / (1000 * 60 * 60));
+                mins = Math.floor(diff / (1000 * 60));
+                secs = Math.floor(diff / 1000);
 
-            d = days;
-            h = hours - days * 24;
-            m = mins - hours * 60;
-            s = secs - mins * 60;
+                d = days;
+                h = hours - days * 24;
+                m = mins - hours * 60;
+                s = secs - mins * 60;
 
-            document.getElementById("timer")
-              .innerHTML =
-              '<div>' + d + '<span>Días</span></div>' +
-              '<div>' + h + '<span>Horas</span></div>' +
-              '<div>' + m + '<span>Minutos</span></div>' +
-              '<div>' + s + '<span>Segundos</span></div>';
-            }
-            setInterval('updateTimer()', 1000);
-          </script>
-          <!-- Fin cuenta regresiva-->
-
-
+                document.getElementById("timer")
+                  .innerHTML =
+                  '<div>' + d + '<span>Días</span></div>' +
+                  '<div>' + h + '<span>Horas</span></div>' +
+                  '<div>' + m + '<span>Minutos</span></div>' +
+                  '<div>' + s + '<span>Segundos</span></div>';
+              }
+              setInterval('updateTimer()', 1000);
+            </script>
+            <!-- Fin cuenta regresiva-->
 
 
-          
-        </div>
-      
-        
+
+
+
+          </div>
+
+
       </div>
     </div>
-</center>
+    </center>
   </section><!-- End Hero -->
 
   <section id="comoparticipar" class="values" data-aos="fade-up">
     <div class="container aos-init aos-animate" data-aos="fade-up">
       <header class="section-header">
         <p>¿Cómo participar en los Torneos eSports Teletón?</p>
-      </header><div class="row">
+      </header>
+      <div class="row" style="margin-top: 50px;">
         <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
           <div class="box"> <img src="assets/img/teleton/pasos/Paso 1.png" class="img-fluid" alt="">
             <h3 style="color: #e63742;">Paso 1</h3>
-            <p style="color:black">Selecciona el torneo en el cual quieres competir (Rocket League 3V3, FIFA 23 11V11, FIFA 23 1V1 o Gran Turismo 7).</p>
+            <p style="color:black;font-family: 'Inter', sans-serif;">Selecciona el torneo en el cual quieres competir
+              (Rocket League 3V3, FIFA 23 11V11, FIFA 23 1V1 o Gran Turismo 7).</p>
           </div>
         </div>
         <div class="col-lg-4 mt-4 mt-lg-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
           <div class="box">
-             <img src="assets/img/teleton/pasos/Paso 2.png" class="img-fluid" alt="">
-             <h3 style="color:#e63742">Paso 2</h3>
-             <p style="color:black">Completa el formulario de inscripción con todos los datos solicitados.</p>
-            </div>
-          </div>
-            <div class="col-lg-4 mt-4 mt-lg-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
-              <div class="box"> <img src="assets/img/teleton/pasos/Paso 3.png" class="img-fluid" alt="">
-                <h3 style="color:#e63742">Paso 3</h3>
-                <p style="color:black">Unete al Discord oficial de los Torneos eSports Teletón 2022 para conocer toda la información de los torneos y las inscripciones. Si tienes dudas sobre la competencia escríbenos y te ayudaremos a aclararlas.</p>
-              </div>
-            </div>
+            <img src="assets/img/teleton/pasos/Paso 2.png" class="img-fluid" alt="">
+            <h3 style="color:#e63742">Paso 2</h3>
+            <p style="color:black;font-family: 'Inter', sans-serif;">Completa el formulario de inscripción con todos los
+              datos solicitados.</p>
           </div>
         </div>
-      </section>
+        <div class="col-lg-4 mt-4 mt-lg-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
+          <div class="box"> <img src="assets/img/teleton/pasos/Paso 3.png" class="img-fluid" alt="">
+            <h3 style="color:#e63742">Paso 3</h3>
+            <p style="color:black;font-family: 'Inter', sans-serif;">Unete al Discord oficial de los Torneos eSports
+              Teletón 2022 para conocer toda la información de los torneos y las inscripciones. Si tienes dudas sobre la
+              competencia escríbenos y te ayudaremos a aclararlas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <main id="main">
-    
+
     <!-- ======= Pricing Section ======= -->
     <section id="torneos" class="pricing" style="margin-top: 100px;">
 
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>¡Inscríbete en torneos en modalidad individual o de equipos y participa por increíbles premios!</h2>
+          <h2 style="font-family: 'Inter', sans-serif;padding-top: 20px;">¡Inscríbete en torneos en modalidad individual o de equipos y
+            participa por increíbles premios!</h2>
           <p>Torneos eSports Teletón</p>
         </header>
 
-        <div class="row gy-4" data-aos="fade-left">
+        <div class="row gy-4" data-aos="fade-left" style="margin-top:20px">
 
           <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="box">
@@ -168,12 +179,11 @@
                 <li>
                   <a style="font-weight:bold">Cupos:</a> 128 Equipos.
                 </li>
-                <li>
-                  <a style="font-weight:bold">GRAN FINAL PRESENCIAL</a>
-                </li>
-                              
+
+
               </ul>
-              <a href="/formulario-rocketleague" target="_blank" class="btn-buy">Inscribirse</a>
+              <a href="#" target="_blank" class="btn-buy" style="width: 168px;margin-bottom: 10px;">Bases</a>
+              <a href="/formulario-rocketleague" target="_blank" class="btn-buy" style="width: 168px;">Inscribirse</a>
             </div>
           </div>
 
@@ -194,11 +204,10 @@
                 <li>
                   <a style="font-weight:bold">Cupos:</a> 64 Equipos.
                 </li>
-                <li>
-                  <a style="font-weight:bold">GRAN FINAL PRESENCIAL</a>
-                </li>
+
               </ul>
-              <a href="/formulario-fifa11v11" target="_blank" class="btn-buy">Inscribirse</a>
+              <a href="#" target="_blank" class="btn-buy" style="width: 168px;margin-bottom: 10px;">Bases</a>
+              <a href="/formulario-fifa11v11" target="_blank" class="btn-buy" style="width: 168px;">Inscribirse</a>
             </div>
           </div>
 
@@ -218,11 +227,10 @@
                 <li>
                   <a style="font-weight:bold">Cupos:</a> +128 Jugadores.
                 </li>
-                <li>
-                  <a style="font-weight:bold">GRAN FINAL PRESENCIAL</a>
-                </li>
+
               </ul>
-              <a href="/formulario-fifa1v1" target="_blank" class="btn-buy">Inscribirse</a>
+              <a href="#" target="_blank" class="btn-buy" style="width: 168px;margin-bottom: 10px;">Bases</a>
+              <a href="/formulario-fifa1v1" target="_blank" class="btn-buy" style="width: 168px;">Inscribirse</a>
             </div>
           </div>
 
@@ -242,11 +250,10 @@
                 <li>
                   <a style="font-weight:bold">Cupos:</a> +128 Jugadores.
                 </li>
-                <li>
-                  <a style="font-weight:bold">GRAN FINAL PRESENCIAL</a>
-                </li>
+
               </ul>
-              <a href="/formulario-granturismo7" target="_blank" class="btn-buy">Inscribirse</a>
+              <a href="#" target="_blank" class="btn-buy" style="width: 168px;margin-bottom: 10px;">Bases</a>
+              <a href="/formulario-granturismo7" target="_blank" class="btn-buy" style="width: 168px;">Inscribirse</a>
             </div>
           </div>
 
@@ -257,44 +264,132 @@
     </section><!-- End Pricing Section -->
 
 
-    
-    
+
+
     <!-- ======= Features Section ======= -->
     
-    <section id="discord" class="discord d-flex align-items-center" data-aos="fade-up" style="margin-top: 50px;">
-      <div class="container">
+    <section id="discord" class="discord d-flex align-items-center" data-aos="fade-up" style="margin-bottom: 100px">
+      <div class="container" style="margin-top: 100px;">
         <div class="row">
           <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up" class="aos-init aos-animate" style="font-weight: bold; color:#e63742;">Únete al Discord oficial de los Torneos eSports Teletón</h1>
+            <h1 data-aos="fade-up" class="aos-init aos-animate" style="font-weight: bold; color:#e63742;">Únete al
+              Discord oficial de los Torneos eSports Teletón</h1>
             <br>
-            <h2 data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">Ahí encontrarás toda la información relevante para participar en cualquiera de nuestros torneos. Reglamentos, preguntas frecuentes, fechas importantes, participantes y muchos más.</h2>
+            <h2 style="font-family: 'Inter', sans-serif;" data-aos="fade-up" data-aos-delay="400"
+              class="aos-init aos-animate">Ahí encontrarás toda la información relevante para participar en cualquiera
+              de nuestros torneos. Reglamentos, preguntas frecuentes, fechas importantes, participantes y muchos más.
+            </h2>
             <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
-             
+
               <div class="text-center text-lg-start">
-                 <a href="https://discord.gg/c72WqUMWxE" target="_blank" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                   <span>Unirse</span>
-                    <i class="bi bi-arrow-right"></i>
-                   </a>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-lg-6 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
-                <center>
-
-                  <iframe src="https://discord.com/widget?id=1009570077512847441&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-
-                </center>
-              </div>
-            
+                <a href="https://discord.gg/c72WqUMWxE" target="_blank"
+                  class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Unirse</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
-          </section>
-                   
+          </div>
+
+          <div class="col-lg-6 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
+            <center>
+
+              <iframe src="https://discord.com/widget?id=1009570077512847441&theme=dark" width="350" height="500"
+                allowtransparency="true" frameborder="0"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+            </center>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- End Features Section -->
 
-    
-    <section id="team" class="team">
+
+
+    <section id="canales" class="team" style="margin-bottom: 120px">
+
+      <div class="container" data-aos="fade-up" style="">
+
+        <header class="section-header">
+          <p>Canales de Streaming</p>
+        </header>
+
+        <div class="row gy-4" style="display: block;">
+
+
+          <!-- Add a placeholder for the Twitch embed -->
+          <div style="display:flex;justify-content:center;padding-top: 50px;">
+
+            <div style="display: flex;justify-content:center">
+              <div data-aos="fade-up" id="twitch-embed"></div>
+            </div>
+
+            <div style="display: flex;justify-content:center;padding-left: 15px;">
+              <div data-aos="fade-up" id="twitch-embed1"></div>
+            </div>
+
+          </div>
+          <center>
+          <img style="width: 300px;margin-top: 50px;" src="assets/img/teleton/inicio/Logo-eSports-Teleton-RGB-1.png" class="img-fluid" alt="">
+          </center>
+
+
+
+          <!-- Load the Twitch embed script -->
+          <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+          <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element. -->
+          <script type="text/javascript">
+            var embed = new Twitch.Embed("twitch-embed", {
+              width: 800,
+              height: 400,
+              channel: "anfv_chile",
+              layout: "video",
+              autoplay: false,
+              // Only needed if this page is going to be embedded on other websites
+              parent: ["embed.example.com", "localhost"]
+            });
+
+            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+              var player = embed.getPlayer();
+              player.play();
+            });
+          </script>
+
+
+
+
+          <!-- Load the Twitch embed script -->
+          <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+          <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element. -->
+          <script type="text/javascript">
+            var embed = new Twitch.Embed("twitch-embed1", {
+              width: 800,
+              height: 400,
+              channel: "gamingarenacl",
+              layout: "video",
+              autoplay: false,
+              // Only needed if this page is going to be embedded on other websites
+              parent: ["embed.example.com", "localhost"]
+            });
+
+            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+              var player = embed.getPlayer();
+              player.play();
+            });
+          </script>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="noticias" class="team" style="padding-top: 30px;">
 
       <div class="container" data-aos="fade-up">
 
@@ -304,15 +399,19 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="https://www.teleton.cl/hubfs/Spot_Screen0-1.png" class="img-fluid" alt="">
-                
+                <img src="/assets/img/teleton/noticias/1.png" class="img-fluid" alt="">
+
               </div>
               <div class="member-info">
-                <h4 style="color:#e63742;">Noticias</h4>
-                <p style="color:black; font-family: 'Nunito';font-weight: bold; font-style: normal;">Mira aquí el primer spot de la campaña Teletón 2022</p>
+                <h4
+                  style="color:#e63742;font-family: 'Inter', sans-serif;font-size: 16px;padding-top: 15px;text-align: left;padding-left: 15px;padding-right: 15px;">
+                  Noticias</h4>
+                <p
+                  style="color:black;font-weight: bold; font-style: normal;font-size: 20px;text-align: left;padding-left: 15px;padding-right: 15px;">
+                  Teletín comenzó su recorrido por Chile</p>
               </div>
             </div>
           </div>
@@ -320,12 +419,16 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="https://www.teleton.cl/hubfs/festi.jpg" class="img-fluid" alt="">
-                
+                <img src="/assets/img/teleton/noticias/2.png" class="img-fluid" alt="">
+
               </div>
               <div class="member-info">
-                <h4 style="color:#e63742;">Noticias</h4>
-                <p style="color:black">“Game of Teletón”: el videojuego que ayuda a la rehabilitación</p>
+                <h4
+                  style="color:#e63742;font-family: 'Inter', sans-serif;font-size: 16px;padding-top: 15px;text-align: left;padding-left: 15px;padding-right: 15px;">
+                  Noticias</h4>
+                <p
+                  style="color:black;font-weight: bold; font-style: normal;font-size: 20px;text-align: left;padding-left: 15px;padding-right: 15px;">
+                  Maithe y sus recorridos por Santiago</p>
               </div>
             </div>
           </div>
@@ -333,25 +436,33 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <div class="member-img">
-                <img src="https://www.teleton.cl/hubfs/52281584674_768b5b54b5_k.jpg" class="img-fluid" alt="">
-                
+                <img src="/assets/img/teleton/noticias/3.png" class="img-fluid" alt="">
+
               </div>
               <div class="member-info">
-                <h4 style="color:#e63742;">Noticias</h4>
-                <p style="color:black">Teletón lanza concurso de dibujo y obra teatral “Teletín viajero”</p>
+                <h4
+                  style="color:#e63742;font-family: 'Inter', sans-serif;font-size: 16px;padding-top: 15px;text-align: left;padding-left: 15px;padding-right: 15px;">
+                  Noticias</h4>
+                <p
+                  style="color:black;font-weight: bold; font-style: normal;font-size: 20px;text-align: left;padding-left: 15px;padding-right: 15px;">
+                  Teletón entrega simbólico corazón a canales de TV y anuncia su tradicional gira por el país</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="https://www.teleton.cl/hubfs/DMF_3034.jpg" class="img-fluid" alt="">
-                
+                <img src="/assets/img/teleton/noticias/4.png" class="img-fluid" alt="">
+
               </div>
               <div class="member-info">
-                <h4 style="color:#e63742;">Noticias</h4>
-                <p style="color:black">Teletón celebra Día de la Solidaridad</p>
+                <h4
+                  style="color:#e63742;font-family: 'Inter', sans-serif;font-size: 16px;padding-top: 15px;text-align: left;padding-left: 15px;padding-right: 15px;">
+                  Noticias</h4>
+                <p
+                  style="color:black;font-weight: bold; font-style: normal;font-size: 20px;text-align: left;padding-left: 15px;padding-right: 15px;">
+                  “Game of Teletón”: el videojuego que ayuda a la rehabilitación</p>
               </div>
             </div>
           </div>
@@ -360,119 +471,124 @@
 
       </div>
 
+
+
+      
     </section><!-- End Team Section -->
 
-    
-    
-    
+
+
+
     <!-- ======= Clients Section ======= -->
-    
+
     <section id="clients" class="clients" data-aos="fade-up">
       <center>
-        <header class="section-header">
-          <p style="font-size: 20px;">ESTE PROYECTO SE LLEVA A CABO GRACIAS A</p>
-        </header>
-      <div class="container aos-init aos-animate" data-aos="zoom-in" style="display: flex;justify-content:center">
-        
-        
-        
-          
-            <div class="col-lg-2 col-md-4 col-6"> 
-              <p style="padding-left: 90px;">Organiza</p>
-              <a href="https://www.teleton.cl/" target="_blank" style="display: flex;justify-content: end;">
-                <img src="assets/img/teleton/agradecimientos/Teleton.png" class="img-fluid" alt="">
-              </a>
-            </div>
-          
-            <div class="col-lg-2 col-md-4 col-6"> 
-              <p>Colabora</p>
-              <div style="display: flex;justify-content: center;width: 400px">
-                <a href="https://www.instagram.com/anfv_chile/" target="_blank">
-                  <img src="assets/img/teleton/agradecimientos/ANFV.png" class="img-fluid" alt="">
-                </a>
-                <a href="https://www.instagram.com/gamingarenacl/" target="_blank" style="display: flex;justify-content:start">
-                  <img src="assets/img/teleton/agradecimientos/Gaming Arena.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              
-            </div>
-            <div class="col-lg-2 col-md-4 col-6"> 
-              <p>Auspicia</p>
-              <a href="https://www.instagram.com/gamingarenacl/" target="_blank" style="display: flex;justify-content:start">
+
+        <div class="container aos-init aos-animate" data-aos="zoom-in" style="display: flex;justify-content:center">
+
+
+
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <p style="padding-left: 90px;color:#e63742;">Organiza</p>
+            <a href="https://www.teleton.cl/" target="_blank" style="display: flex;justify-content: end;">
+              <img src="assets/img/teleton/agradecimientos/Teleton.png" class="img-fluid" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <p style="color:#e63742;">Colabora</p>
+            <div>
+
+              <a href="https://www.instagram.com/gamingarenacl/" target="_blank"
+                style="display: flex;justify-content: center;">
                 <img src="assets/img/teleton/agradecimientos/Gaming Arena.png" class="img-fluid" alt="">
               </a>
             </div>
-            
 
           </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <p style="padding-right: 70px;color:#e63742;">Auspicia</p>
+            <a href="https://www.instagram.com/gamingarenacl/" target="_blank"
+              style="display: flex;justify-content:start">
+              <img src="" class="img-fluid" alt="">
+            </a>
+          </div>
+
+
         </div>
-  </center>
-      </section>
-    
-    
+        </div>
+      </center>
+    </section>
+
+
     <!-- End Clients Section -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
-    
-    
+
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer" data-aos="fade-up">
-
+  <footer id="footer" class="footer">
 
     <div class="container">
-      <div class="copyright">
-        &copy; 2022 <strong><a target="_blank" href="https://www.teleton.cl/" style="color:#e63742;">Teletón Chile</a></strong> en conjunto a <a href="https://www.instagram.com/anfv_chile/" target="_blank">ANFV Chile</a> & <a target="_blank" href="https://www.instagram.com/gamingarenacl/">Gaming Arena</a>. Todos los Derechos Reservados.
-        <div class="social-links mt-3"> 
+      <div class="copyright" style="font-family: 'Inter', sans-serif;">
+        &copy; 2022 <strong><a target="_blank" href="https://www.teleton.cl/"
+            style="color:#e63742;font-family: 'Inter', sans-serif;">Teletón Chile</a></strong> en conjunto a <a
+          style="font-family: 'Inter', sans-serif;" href="https://www.instagram.com/anfv_chile/" target="_blank">ANFV
+          Chile</a> & <a style="font-family: 'Inter', sans-serif;" target="_blank"
+          href="https://www.instagram.com/gamingarenacl/">Gaming Arena</a>. Todos los Derechos Reservados.
+        <div class="social-links mt-3">
 
 
           <a href="https://www.facebook.com/teletonchile" target="_blank" class="facebook">
-                        <i class="bi bi-facebook"></i>
-          </a> 
+            <i class="bi bi-facebook"></i>
+          </a>
 
           <a href="https://www.youtube.com/channel/UCfGbXA1P_n-ggNdrxw1E0Aw" target="_blank" class="twitter">
             <i class="bi bi-youtube"></i>
-          </a> 
+          </a>
 
           <a href="https://www.instagram.com/teleton_chile/" target="_blank" class="instagram">
-                        <i class="bi bi-instagram"></i>
-          </a> 
+            <i class="bi bi-instagram"></i>
+          </a>
 
           <a href="https://twitter.com/Teleton" target="_blank" class="twitter">
             <i class="bi bi-twitter"></i>
-          </a> 
+          </a>
 
           <a href="https://cl.linkedin.com/company/teleton" target="_blank" class="linkedin">
-              <i class="bi bi-linkedin"></i>
+            <i class="bi bi-linkedin"></i>
           </a>
 
           <a href="https://www.tiktok.com/@teletoncl" target="_blank" class="linkedin">
-              <i class="bi bi-tiktok"></i>
+            <i class="bi bi-tiktok"></i>
           </a>
 
           <a href="https://www.twitch.tv/GamingArenaCL" target="_blank" class="linkedin">
-                        <i class="bi bi-twitch"></i>
+            <i class="bi bi-twitch"></i>
           </a>
 
           <a href="https://discord.gg/2Cj2r6qwjz" target="_blank" class="linkedin">
-              <i class="bi bi-discord"></i>
+            <i class="bi bi-discord"></i>
           </a>
 
-           
-          
-          
 
-          </div>
+
+
+
+        </div>
       </div>
 
 
     </div>
 
-    
+
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

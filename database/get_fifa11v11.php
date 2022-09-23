@@ -30,9 +30,7 @@ if (isset($_POST['register'])){
         $consulta = "INSERT INTO fifa11v11(nombre,rut,genero,nacimiento,comuna,email,telefono,discord,equipo)  VALUES ('$nombre','$rut','$genero','$nacimiento','$comuna','$email','$telefono','$discord','$equipo')";
         $resultado = mysqli_query($db,$consulta);
         if($resultado) {
-            ?> 
-            ¡Se inscribió exitosamente!
-            <?php
+            header("Location: /felicidades");
         } else {
             ?>            
             ¡Ups ha ocurrido un error!

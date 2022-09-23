@@ -8,12 +8,14 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @font-face {
   font-family: "teleton22";
-  src: url("/teleton22.otf") format("truetype");
+  src: url("teleton22.otf") format("truetype");
 }
 *{
-  font-family: teleton22;
+  font-family: 'Rubik', sans-serif;
 }
 :root {
   scroll-behavior: smooth;
@@ -23,7 +25,7 @@
 }
 
 body {
-  font-family: teleton22, sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: #444444;
 }
 
@@ -43,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: teleton22, sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -55,6 +57,7 @@ section {
 }
 
 .section-header {
+  font-family: 'Rubik', sans-serif;
   text-align: center;
   padding-bottom: 40px;
 }
@@ -66,10 +69,11 @@ section {
   margin: 0;
   color: var(--teleton-rojo);
   text-transform: uppercase;
-  font-family: teleton22;
+  font-family: 'Rubik', sans-serif;
 }
 
 .section-header p {
+  font-family: 'Rubik', sans-serif;
   margin: 10px 0 0 0;
   padding: 0;
   font-size: 38px;
@@ -208,7 +212,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #012970;
-  font-family: teleton22, sans-serif;
+  font-family: 'Rubik', sans-serif;
   margin-top: 3px;
 }
 
@@ -240,7 +244,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: teleton22, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: var(--teleton-negro);
@@ -487,7 +491,7 @@ section {
 }
 
 .hero .btn-get-started span {
-  font-family: teleton22, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -586,7 +590,7 @@ section {
 }
 
 .about .btn-read-more span {
-  font-family: teleton22, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -667,7 +671,7 @@ section {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: teleton22, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 14px;
 }
 
@@ -980,7 +984,7 @@ section {
   font-size: 36px;
   color: #444444;
   font-weight: 600;
-  font-family: teleton22, sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .pricing .price sup {
@@ -1026,7 +1030,7 @@ section {
   transition: none;
   font-size: 16px;
   font-weight: 400;
-  font-family: teleton22, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 600;
   transition: 0.3s;
   border: 1px solid var(--teleton-rojo);
@@ -2329,7 +2333,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #012970;
-  font-family: teleton22, sans-serif;
+  font-family: 'Rubik', sans-serif;
   margin-top: 3px;
 }
 
@@ -2337,7 +2341,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: teleton22, sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .copyright .social-links a {
@@ -2432,7 +2436,7 @@ section {
 }
 
 .discord .btn-get-started span {
-  font-family: teleton22, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
