@@ -2491,3 +2491,6 @@ section {
     width: 50%;
   }
 }
+.outlinep:hover{
+  text-decoration: underline;
+}
