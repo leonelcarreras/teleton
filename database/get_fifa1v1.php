@@ -32,7 +32,9 @@ if (isset($_POST['register'])){
         $consulta = "INSERT INTO fifa1v1(nombre,rut,genero,nacimiento,comuna,email,telefono,discord,plataforma,usuario)  VALUES ('$nombre','$rut','$genero','$nacimiento','$comuna','$email','$telefono','$discord','$plataforma','$usuario')";
         $resultado = mysqli_query($db,$consulta);
         if($resultado) {
-            header("Location: /felicidades");
+            ?> 
+            ¡Se inscribió exitosamente!
+            <?php
         } else {
             ?>            
             ¡Ups ha ocurrido un error!
